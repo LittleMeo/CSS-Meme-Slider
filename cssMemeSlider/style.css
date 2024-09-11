@@ -1,5 +1,26 @@
+:root {
+    --button-color: #003472;
+    --background-color: #333333;
+}
+
 .body {
   max-width: 1280px;
   margin: 0 auto;
-  background-color: gray;
+  background-color: var(--background-color);
+}
+
+.slider__wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.slider__images {
+    overflow: hidden;
+    display: flex;
+    width: 490px;
+    height: 500px;
+}
+
+.slider__pagination {
+    text-align: center;
 }
