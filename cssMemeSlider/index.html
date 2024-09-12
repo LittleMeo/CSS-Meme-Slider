@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body class="body">
-    <div class="slider">
+    <div class="slider" data-active-slide="0">
       <div class="slider__wrapper">
         <div class="slider__images">
           <img class="slider__meme" src="./assets/0.jpg" alt="meme0" />
@@ -15,17 +15,33 @@
           <img class="slider__meme" src="./assets/2.jpg" alt="meme2" />
           <img class="slider__meme" src="./assets/3.jpg" alt="meme3" />
         </div>
-        <div class="slider__description">
-          БОССЫ SONY ПЫТАЮТСЯ РАЗОБРАТСЯ ЧЕГО ЖЕ ХОТЯТ ИГРОКИ ПОСЛЕ ПРОВАЛА
-          CONCORD, КОТОРЫЙ ОБОШЕЛСЯ ИМ В 200 МИЛЛИОНОВ ДОЛЛАРОВ
+        <div class="slider__content">
+          <div class="slider__description">
+            БОССЫ SONY ПЫТАЮТСЯ РАЗОБРАТСЯ ЧЕГО ЖЕ ХОТЯТ ИГРОКИ ПОСЛЕ ПРОВАЛА
+            CONCORD, КОТОРЫЙ ОБОШЕЛСЯ ИМ В 200 МИЛЛИОНОВ ДОЛЛАРОВ
+          </div>
+          <div class="slider__description">НЕДОВОЗКИ ПЕРЕДОРОГО</div>
+          <div class="slider__description">КОГДА УЗНАЛ ЧТО СЕГОДНЯ 5 ПАР</div>
+          <div class="slider__description">
+            ТРЕБУЕТСЯ ПРОДАВЕЦ С СОЗНАНИЕМ КОМПЬЮТОРА.
+          </div>
         </div>
         <div class="slider__pagination">
-          <button class="pagination__button"><div class="pagination__icon" active></div></button>
-          <button class="pagination__button"><div class="pagination__icon"></div></button>
-          <button class="pagination__button"><div class="pagination__icon"></div></button>
-          <button class="pagination__button"><div class="pagination__icon"></div></button>
+          <button class="pagination__button" id="0">
+            <div class="pagination__icon" active></div>
+          </button>
+          <button class="pagination__button" id="1">
+            <div class="pagination__icon"></div>
+          </button>
+          <button class="pagination__button" id="2">
+            <div class="pagination__icon"></div>
+          </button>
+          <button class="pagination__button" id="3">
+            <div class="pagination__icon"></div>
+          </button>
         </div>
       </div>
     </div>
   </body>
+  <script src="./main.js"></script>
 </html>
