@@ -3,7 +3,6 @@ window.onload = function () {
   const paginationBtns = document.querySelectorAll(".pagination__button");
   paginationBtns.forEach((el) => {
       el.addEventListener("click", () => {
-          console.log(el);
           setDataId(el.id)
     });
   });
@@ -13,5 +12,4 @@ window.onload = function () {
 const setDataId = (id) => {
   const slider = document.querySelector(".slider");
   slider.dataset.activeSlide = id;
-  console.log(slider.dataset);
 };
