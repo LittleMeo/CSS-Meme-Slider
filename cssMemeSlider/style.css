@@ -138,6 +138,11 @@ input {
   border-color: #ffffff;
 }
 
+.pagination__label:active {
+  background-color: transparent;
+  transition: 0.3s;
+}
+
 .pagination__button[value="0"]:checked ~ .pagination__label:nth-child(5) {
   background-color: transparent;
   transition: 0.3s;
